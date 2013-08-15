@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <solr persistent="true">
   <cores host="${host:}" adminPath="/admin/cores" hostPort="${jetty.port:8983}" hostContext="${hostContext:solr}">
+    <core instanceDir="cores/global" name="global"/>
     <core instanceDir="cores/dev-Content" name="dev-Content"/>
     <core instanceDir="cores/dev-User" name="dev-User"/>
     <core instanceDir="cores/dev-Activity" name="dev-Activity"/>
